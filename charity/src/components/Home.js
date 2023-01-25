@@ -5,7 +5,7 @@ function Home(){
     <div>
         <div className='head'>
              <h1>By Graces</h1>
-             <p><em>"The best way to find yourself is to loss yourself in the service of others"</em></p>
+            <center> <p><em>"The best way to find yourself is to loss yourself in the service of others"</em></p></center>
          </div>
         <p className='p1'>Welcome to the XYZ Charity Organization website!</p>
         <p className='p1'>Our organization is a non-profit dedicated to improving the lives of those in need through various programs and initiatives. We focus on three main areas: education, healthcare and poverty reduction.</p>
