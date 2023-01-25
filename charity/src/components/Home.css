@@ -1,0 +1,12 @@
+.head{
+    background-image: url("../images/kidssweets.jpeg");
+    background-size: cover;
+    background-color: rgb(0, 0, 0, .6);
+    background-blend-mode: multiply;
+  }
+  .p1{
+    text-align: center;
+  }
+  .flex-x{
+    display: flex;
+  }
