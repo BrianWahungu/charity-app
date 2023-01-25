@@ -6,7 +6,7 @@ function NavBar(){
     return(
         <div className="topNavBar">
             <Link className="active" to="/">Home</Link>.
-            <Link to="/organisations">Organisations</Link>
+            <Link to="/organiztion">Organisations</Link>
             <Link to="/about">About</Link>
             <Link to="/contact">Contact</Link>
             <Link to="/donate">Donate</Link>
