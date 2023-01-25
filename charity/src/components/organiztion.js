@@ -1,20 +1,15 @@
 import React from "react";
-import { useState,useEffect } from "react";
 import './org.css'
+import Search from "./search";
 
-function OrganizationList(){
-  const [lists,setlist]=useState([])
-  
-  useEffect(()=>{
-    fetch('http://localhost:3000/data')
-    .then(res =>res.json())
-    .then(data =>setlist(data))
-  },[])
+function OrganizationList({lists,handleSearchLoc,handleSearchCat}){
   
   
   return(
         <div>
-<table class="table">
+          <Search handleSearchLoc={handleSearchLoc}
+          handleSearchCat={handleSearchCat}/>
+<table className="table">
   <thead>
     <tr>
       <th scope="col">State</th> 
@@ -35,7 +30,7 @@ function OrganizationList(){
       <td>{list.charityName}</td>
       <td>{list.category}</td>
       <td>{list.url}</td>
-      <td><button onclick={list.donationUrl}>Donate</button></td>
+      <td><button >Donate</button></td>
     </tr> 
    )})}
   </tbody>
