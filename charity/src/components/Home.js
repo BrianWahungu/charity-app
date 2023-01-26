@@ -45,7 +45,7 @@ function Home(){
         
         <div className="bp" >
             <button id='donate' type="button" class="btn btn-outline-warning"> Donate</button>
-            <p id="pb">Thank you for visiting our website and for your support.</p> 
+            <p id="pb"><strong><em>Thank you for visiting our website and for your support.</em></strong></p> 
         </div>
           
     </div>
