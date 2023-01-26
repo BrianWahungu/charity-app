@@ -19,9 +19,8 @@ function NavBar(){
                     </li>
 
                     <li className="nav-item">
-
-                      <Link className="active me-3 navbar-brand" to="/organiztion">Organisations</Link>
-                     </li>
+                      <Link className="active me-3 navbar-brand" to="/organiztion">Organisation</Link>
+                    </li>
 
                     <li className="nav-item">
                       <Link className="active me-3 navbar-brand" to="/about">About</Link>
