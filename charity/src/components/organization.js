@@ -1,6 +1,6 @@
 import React from 'react';
 
-function SelectedCharity({ selectedCharity }) {
+function SelectedCharity({ selectedCharity,onBack }) {
     
   return (
     
@@ -15,6 +15,7 @@ function SelectedCharity({ selectedCharity }) {
           <p>Longitude: {selectedCharity.longitude}, Latitude: {selectedCharity.latitude}</p>
           {/* <p>Mission: {selectedCharity.missionStatement}</p> */}
           <p><a href={selectedCharity.donationURL}>DONATE</a></p>
+          <button onClick={onBack}>Back</button>
         </div>
       
     

@@ -5,13 +5,34 @@ import SelectedCharity from "./organization";
 
 function OrganizationList({lists,handleSearchLoc,handleSearchCat}){
   const [selectedCharity, setSelectedCharity] = useState(null);
-   
+  const [showCharity, setShowCharity] = useState(false);
+
+
   useEffect(()=>{
     if(selectedCharity){
         <SelectedCharity/>
     }
   },[selectedCharity])
+
+
+
+  function handleClick(list) {
+    setSelectedCharity(list);
+    setShowCharity(true);
+  } 
+
+  function handleBack() {
+    setShowCharity(false);
+  }
   
+ if(showCharity){
+  return(
+    <SelectedCharity 
+    selectedCharity={selectedCharity}
+    onBack={handleBack}/>
+  )
+ }else{
+
   return(
         <div>
           <Search handleSearchLoc={handleSearchLoc}
@@ -34,7 +55,7 @@ function OrganizationList({lists,handleSearchLoc,handleSearchCat}){
       
       <td>{list.state}</td>
       <td>{list.city}</td>
-      <td onClick={() => setSelectedCharity(list)}>{list.charityName}</td>
+      <td onClick={() => handleClick(list)}>{list.charityName}</td>
       <td>{list.category}</td>
       <td>{list.url}</td>
       <td><button >Donate</button></td>
@@ -42,12 +63,13 @@ function OrganizationList({lists,handleSearchLoc,handleSearchCat}){
    )})}
   </tbody>
 </table>
-{selectedCharity?(
+{/* {selectedCharity?(
 <SelectedCharity selectedCharity={selectedCharity} />
 ):(
   <p>Click on a charity to view more details</p>
-)}
+)} */}
         </div>
     )
+}
 }
 export default OrganizationList
