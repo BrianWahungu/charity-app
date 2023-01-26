@@ -1,7 +1,24 @@
 {
-    
-    "data": [
+  "posts": [
     {
+<<<<<<< HEAD
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
+=======
     "ein": "271742079",
     "charityName": "TREASURE COAST HUMAN RESOURCE ASSOCIATION INC",
     "url": "http://www.orghunter.com/organization/271742079",
@@ -923,3 +940,4 @@
         }
         ]
         }
+>>>>>>> 44c8d279619484d3c207e46805f76068743a9dc5
