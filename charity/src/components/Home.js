@@ -48,6 +48,7 @@ function Home(){
             <p id="pb"><strong><em>Thank you for visiting our website and for your support.</em></strong></p> 
         </div>
           
+
     </div>
  )
 }
