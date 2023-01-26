@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function NavBar(){
-    return(
+  return (
       <div>
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
             <div className="container-fluid">
@@ -69,6 +69,7 @@ function NavBar(){
             </div>
         </nav>   
       </div>
+    
     );
 }
 
