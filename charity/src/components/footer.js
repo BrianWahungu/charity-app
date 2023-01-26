@@ -13,7 +13,7 @@ function Footer(){
              <ul className="nav footer-nav">
                  <li><a href="https://www.facebook.com/"><img src={fb} alt='fb'/></a></li>
                  <li><a href="https://www.instagram.com/"><img src={insta} alt='insta'/></a></li>
-                 <li><a href="https://www.youtube.com/"><img src={linkedin} alt='linkedin'/></a></li>
+                 <li><a href="https://www.linkedin.com/"><img src={linkedin} alt='linkedin'/></a></li>
                  <li> <a href="https://twitter.com/"><img src={twitter} alt='twitter'/></a></li>
              </ul>
         </div>
