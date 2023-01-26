@@ -8,8 +8,10 @@ function Contact () {
     </div>
     <div class="card-body">
         <h5 class="card-title">Telephone</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <p class="card-text">+254721345678 / +254722098765</p>
+        <h5 class="card-title">Email Address</h5>
+        <p class="card-text">ByGracescharityorganisation@gmail.com</p>
+        {/* <a href="#" class="btn btn-primary">Go somewhere</a> */}
     </div>
     <div class="card-footer text-muted">
         We are reachable during normal working hours:
