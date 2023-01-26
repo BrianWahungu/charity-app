@@ -14,7 +14,7 @@ function Home(){
          </div>
 
          <div>
-            <p className='p1'>Welcome to the XYZ Charity Organization website!</p>
+            <p className='p1'>Welcome to the XYZ Charity Organization</p>
             <p className='p1'>Our organization is a non-profit dedicated to improving the lives of those in need through various programs and initiatives. We focus on three main areas: education, healthcare and poverty reduction.</p>
          </div>
 
