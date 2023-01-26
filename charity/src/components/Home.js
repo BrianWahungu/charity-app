@@ -14,8 +14,10 @@ function Home(){
          </div>
 
          <div>
-            <p className='p1'>Welcome to the XYZ Charity Organization</p>
-            <p className='p1'>Our organization is a non-profit dedicated to improving the lives of those in need through various programs and initiatives. We focus on three main areas: education, healthcare and poverty reduction.</p>
+          <center className='name'>
+       <strong className='n1'>By Graces</strong>
+       <strong className='n2'>Charity Organisations</strong>
+       </center>
          </div>
 
          <div className='flex-x'>
@@ -34,7 +36,16 @@ function Home(){
           </div>
 
        </div>
-
+       
+         
+               <img src={medical} alt='doctor' className='inpq' />
+         
+       
+      
+       <div className='p-y'>
+              <p>In the field of healthcare, we provide medical assistance and support to those who cannot afford it. We also run programs to promote health education, disease prevention and healthy living. Our goal is to ensure that everyone has access to the healthcare they need to lead a healthy and fulfilling life.</p>
+         </div>
+        
         <div className='flex-x'>
             <img src={poverty} alt='poverty' className='inp'/>
             <p className='p3'>In poverty reduction, we provide basic needs assistance such as food, clothing, and shelter for those experiencing poverty. We also work with local organizations and government agencies to help those in need find long-term solutions to poverty.</p>
@@ -49,6 +60,13 @@ function Home(){
         </div>
           
 
+    
+        <div className="bp" >
+          <center>
+            <button id='donate' type="button" class="btn btn-outline-warning"> Donate</button>
+            <p id="pb"><strong><em>Thank you for visiting our website and for your support.</em></strong></p>
+         </center>
+         </div>
     </div>
  )
 }
