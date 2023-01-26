@@ -50,10 +50,10 @@ function NavBar(){
               </div>
 
                   <div className="authorization">
-                        <button id="Sign-btn" class="btn btn-outline-info ms-2" type="button">
+                        <button id="Sign-btn" className="btn btn-outline-info ms-2" type="button">
                         <Link className="active me-3 navbar-brand" to="/signup">Sign Up</Link>
                         </button>
-                        <button id="login-btn" class="btn btn-outline-primary ms-2" type="button">
+                        <button id="login-btn" className="btn btn-outline-primary ms-2" type="button">
                         <Link className="active me-3 navbar-brand" to="/login">Login</Link>
                         </button>
                   </div>

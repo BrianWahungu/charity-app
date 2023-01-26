@@ -57,7 +57,7 @@ function OrganizationList({lists,handleSearchLoc,handleSearchCat}){
       <td>{list.city}</td>
       <td onClick={() => handleClick(list)}>{list.charityName}</td>
       <td>{list.category}</td>
-      <td><a href={list.url}>link to site</a></td>
+      <td><a href={list.url}>Link to Site</a></td>
       <td><a href={list.donationUrl}>Donate</a></td>
       <td>{list.url}</td>
       <td><button >Donate</button></td>
