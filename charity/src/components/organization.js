@@ -8,13 +8,13 @@ function SelectedCharity({ selectedCharity,onBack }) {
         <div>
           <h2>{selectedCharity.charityName}</h2>
           <p>Category: {selectedCharity.category}</p>
-          <p>Website: {selectedCharity.url}</p>
+          <p>Website: <a href={selectedCharity.url}>here</a></p>
           <p>State: {selectedCharity.state}</p>
           <p>City: {selectedCharity.city}</p>
           <p>ZipCode: {selectedCharity.zipCode}</p>
           <p>Longitude: {selectedCharity.longitude}, Latitude: {selectedCharity.latitude}</p>
           {/* <p>Mission: {selectedCharity.missionStatement}</p> */}
-          <p><a href={selectedCharity.donationURL}>DONATE</a></p>
+          <p><a href={selectedCharity.donationUrl}>DONATE</a></p>
           <button onClick={onBack}>Back</button>
         </div>
       

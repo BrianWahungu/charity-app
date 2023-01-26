@@ -9,13 +9,14 @@ import OrganizationList from './components/organiztion';
 import {BrowserRouter, Route, Routes } from 'react-router-dom';
 import Footer from './components/footer';
 import React, { useState,useEffect } from "react";
+import Donate from './components/Donate';
 
 
 function App() {
   const [lists,setlist]=useState([])
   
   useEffect(()=>{
-    fetch('http://localhost:3000/data')
+    fetch('https://api.npoint.io/01b09628cc4c55f6371d/data/')
     .then(res =>res.json())
     .then(data =>setlist(data))
   },[])
@@ -50,7 +51,7 @@ function App() {
                  handleSearchLoc={handleSearchLoc} />}></Route>
                 <Route path='/about' element={<About />}></Route>
                 <Route path='/contact' element={<Contact />}></Route>
-                {/* <Route path='/donate' element={<Donate/>}></Route> */}
+                <Route path='/donate' element={<Donate/>}></Route>
                 {/* <Route path='/sign up' element={<SignUp/>}></Route> */}
                 <Route path='/login' element={<Authentication/>}></Route>
               </Routes>
