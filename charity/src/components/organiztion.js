@@ -1,9 +1,16 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import './org.css'
 import Search from "./search";
+import SelectedCharity from "./organization";
 
 function OrganizationList({lists,handleSearchLoc,handleSearchCat}){
-  
+  const [selectedCharity, setSelectedCharity] = useState(null);
+   
+  useEffect(()=>{
+    if(selectedCharity){
+        <SelectedCharity/>
+    }
+  },[selectedCharity])
   
   return(
         <div>
@@ -27,7 +34,7 @@ function OrganizationList({lists,handleSearchLoc,handleSearchCat}){
       
       <td>{list.state}</td>
       <td>{list.city}</td>
-      <td>{list.charityName}</td>
+      <td onClick={() => setSelectedCharity(list)}>{list.charityName}</td>
       <td>{list.category}</td>
       <td>{list.url}</td>
       <td><button >Donate</button></td>
@@ -35,6 +42,11 @@ function OrganizationList({lists,handleSearchLoc,handleSearchCat}){
    )})}
   </tbody>
 </table>
+{selectedCharity?(
+<SelectedCharity selectedCharity={selectedCharity} />
+):(
+  <p>Click on a charity to view more details</p>
+)}
         </div>
     )
 }
