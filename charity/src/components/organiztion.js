@@ -6,7 +6,7 @@ function OrganizationList(){
   const [lists,setlist]=useState([])
   
   useEffect(()=>{
-    fetch('http://localhost:3000/data')
+    fetch('http://localhost:3001/data')
     .then(res =>res.json())
     .then(data =>setlist(data))
   },[])
@@ -34,8 +34,8 @@ function OrganizationList(){
       <td>{list.city}</td>
       <td>{list.charityName}</td>
       <td>{list.category}</td>
-      <td>{list.url}</td>
-      <td><button onclick={list.donationUrl}>Donate</button></td>
+      <td><a href={list.url}>link to site</a></td>
+      <td><a href={list.donationUrl}>Donate</a></td>
     </tr> 
    )})}
   </tbody>
