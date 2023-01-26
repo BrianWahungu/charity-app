@@ -2,10 +2,16 @@
 import './App.css'
 import Authentication from './components/Authentication';
 import NavBar from './components/NavBar';
+<<<<<<< HEAD
+import Contact from '../contact/Contact';
+//import About from '../about/About';
+//import Home from '../home/Home';
+=======
 //import Contact from '../contact/Contact';
 import About from './components/About'
 import Home from './components/Home'
 import OrganizationList from './components/organiztion';
+>>>>>>> d61f6eb135579338908a471a8bdf75b3f9ddb9ff
 import {BrowserRouter, Route, Routes } from 'react-router-dom';
 import Footer from './components/footer';
 import React, { useState,useEffect } from "react";
@@ -49,9 +55,15 @@ function App() {
                  handleSearchCat={handleSearchCat}
                  handleSearchLoc={handleSearchLoc} />}></Route>
                 <Route path='/about' element={<About />}></Route>
+<<<<<<< HEAD
+                <Route path='/contact' element={<Contact />}></Route>
+                <Route path='/donate' element={<Donate/>}></Route>
+                <Route path='/sign up' element={<SignUp/>}></Route>
+=======
                 {/* <Route path='/contact' element={<Contact />}></Route> */}
                 {/* <Route path='/donate' element={<Donate/>}></Route> */}
                 {/* <Route path='/sign up' element={<SignUp/>}></Route> */}
+>>>>>>> d61f6eb135579338908a471a8bdf75b3f9ddb9ff
                 <Route path='/login' element={<Authentication/>}></Route>
               </Routes>
               <Footer/>
