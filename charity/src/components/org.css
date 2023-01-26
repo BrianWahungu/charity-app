@@ -7,6 +7,7 @@ th {
     margin-left: 0;
     color: white;
     /* text-align: left; */
+    /* background-image: #FCAA19; */
   }
   tr:nth-child(even) {background-color: #F2F2F2;}
   th, td {
