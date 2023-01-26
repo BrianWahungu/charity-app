@@ -44,9 +44,11 @@ function Home(){
         <p>If you would like to help us in our mission, you can donate to our organization, volunteer your time and skills, or simply spread the word about our organization. Together, we can make a real difference in the world.</p>
         
         <div className="bp" >
+          <center>
             <button id='donate' type="button" class="btn btn-outline-warning"> Donate</button>
             <p id="pb"><strong><em>Thank you for visiting our website and for your support.</em></strong></p> 
-        </div>
+          </center>
+       </div>
           
 
     </div>
