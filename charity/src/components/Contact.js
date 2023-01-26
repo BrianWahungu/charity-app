@@ -11,7 +11,7 @@ function Contact () {
 <div className="img-p">
     {/* <div className="img-h">
         <img src={contactp} alt="..." className="img-p"/>
-    </div> */}
+    </div>*/ }
     
     <div className="card-header">
         <br></br>
