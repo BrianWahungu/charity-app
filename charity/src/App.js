@@ -2,12 +2,10 @@
 import './App.css'
 import Authentication from './components/Authentication';
 import NavBar from './components/NavBar';
-
 import Contact from './components/Contact';
-import About from './components/About'
+import About from './components/About';
 import Home from './components/Home'
 import OrganizationList from './components/organiztion';
-
 import {BrowserRouter, Route, Routes } from 'react-router-dom';
 import Footer from './components/footer';
 import React, { useState,useEffect } from "react";

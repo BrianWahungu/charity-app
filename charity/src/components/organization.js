@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './organization.css'
 function SelectedCharity({ selectedCharity,onBack }) {
     
   return (

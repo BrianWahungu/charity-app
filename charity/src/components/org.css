@@ -1,5 +1,6 @@
 th {
-    background-image: linear-gradient(to right, #DC0E2B, #E00E2B, #E40D2B, #E80D2B, #EC0C2B);
+  background-image: linear-gradient(to right top, #fcaa19, #f7a91f, #f2a825, #eda62a, #e8a52e);
+    /* background-image: linear-gradient(to right, #DC0E2B, #E00E2B, #E40D2B, #E80D2B, #EC0C2B); */
     padding: 1px;
     border: none;
     border-collapse: collapse;
@@ -7,7 +8,7 @@ th {
     margin-left: 0;
     color: white;
     /* text-align: left; */
-    /* background-image: #FCAA19; */
+    /* background-color: #FCAA19; */
   }
   tr:nth-child(even) {background-color: #F2F2F2;}
   th, td {
@@ -32,7 +33,8 @@ tr{
     margin: 20px;
 }
 tbody > tr:hover {
-  color: rgb(240, 6, 37);
+  /* color: rgb(240, 6, 37); */
+  color: #e8a52e;
   text-decoration: underline;
   background-color: #ddd;
 }

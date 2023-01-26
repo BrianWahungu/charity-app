@@ -44,7 +44,9 @@ function Home(){
      <div className='p4'>
         <p>Our organization is run by a dedicated team of volunteers and staff who are committed to making a real difference in the lives of those we serve. We partner with other organizations and individuals to maximize the impact of our efforts and ensure that every dollar donated goes directly to those in need.</p>
         <p>If you would like to help us in our mission, you can donate to our organization, volunteer your time and skills, or simply spread the word about our organization. Together, we can make a real difference in the world.</p>
+
        </div>     
+
         <div className="bp" >
           <center>
             <button id='donate' type="button" class="btn btn-outline-dark"><Link to="/donate"></Link>DONATE</button>
