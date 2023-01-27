@@ -2,9 +2,9 @@
 
 ## Description
 
-This is an app that seeks to connect people to charity organization around the world. On opening the website, you will be directed to
+This is an app that seeks to connect people to charity organizations around the world. On opening the website, you will be directed to
 the homepage. From there you can cick on the links provided to navigate you to that section. We have an about, an organization, donate,sign up and login 
-links provided. when you go to the organization link, you will find a list of charity organizations and their links provided and also links of where to donate. On clicking the charity name, you should find more information about that give organization. On the NavBar, when you click the donate button, you will be directed to a page where you can enter the amount you would like to donate and the charity name ad it will be displayed below the form.
+links provided. When you go to the organization link, you will find a list of charity organizations and their links provided and also links of where to donate. On clicking the charity name, you should find more information about that give organization. On the NavBar, when you click the donate button, you will be directed to a page where you can enter the amount you would like to donate and the charity name ad it will be displayed below the form.
 The sign up button redirects you to a sign up form and when you click submit, you will be taken to the login form,upon finishing and submitting, you will
 be taken to the homepage. on the organization section, there are two search input areas, one to search city and another to search category.
 
