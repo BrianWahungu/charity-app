@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# BY GRACES
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+This is an app that seeks to connect people to charity organization around the world. On opening the website, you will be directed to
+the homepage. From there you can cick on the links provided to navigate you to that section. We have an about, an organization, donate,sign up and login 
+links provided. when you go to the organization link, you will find a list of charity organizations and their links provided and also links of where to donate. On clicking the charity name, you should find more information about that give organization. On the NavBar, when you click the donate button, you will be directed to a page where you can enter the amount you would like to donate and the charity name ad it will be displayed below the form.
+The sign up button redirects you to a sign up form and when you click submit, you will be taken to the login form,upon finishing and submitting, you will
+be taken to the homepage. on the organization section, there are two search input areas, one to search city and another to search category.
 
-In the project directory, you can run:
+## Installation
+### Requirements
 
-### `npm start`
+<li>VS Code</li>
+    <li>json-server</li>
+    <li>node</li>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Running This Application
+Clone from this here [github](https://github.com/BrianWahungu/charity-app)
 
-### `npm test`
+to clone follow this steps
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+Clone the repo by using the following:   
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+       https://github.com/BrianWahungu/charity-app
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Change directory to the repo folder: 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+        cd charity-app
 
-### `npm run eject`
+Open it in Visual Studio Code
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+        code .
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Run this command
+   `npm install`
 
-## Learn More
+You should also run 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+        npm install react-router-dom
+        
+        npm start
+        
+The link to the website is [here](https://by-graces.vercel.app/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Authors 
 
-### Code Splitting
+Brian Wahungo
+Grace Aloo
+Zamil Mozamil Sheikh
+Benson Wanjira
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+ISC
