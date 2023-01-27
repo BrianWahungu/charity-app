@@ -50,8 +50,14 @@ The link to the website is [here](https://by-graces.vercel.app/)
 ## Authors 
 
 Brian Wahungo
+
+
 Grace Aloo
+
+
 Zamil Mozamil Sheikh
+
+
 Benson Wanjira
 
 ## License
