@@ -1,8 +1,19 @@
-import React from "react";
+import React,{useState} from "react";
 // import './navbar.css'
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
-function NavBar(){
+ function NavBar(){
+//   const [isLoggedIn, setIsLoggedIn] = useState(false);
+// let history = useHistory();
+
+// function handleLogout() {
+// setIsLoggedIn(false);
+// }
+// function handleLogin() {
+  // redirect to authentication page
+//   history.push("/login");
+// }
+
   return (
       <div>
         <nav className="navbar navbar-expand-lg bg-body-tertiary">

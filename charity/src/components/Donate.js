@@ -1,6 +1,9 @@
 import React,{useState} from "react";
+import { list, getNextId } from './list'
 
-function Donate(){
+
+function Donate({lists}){
+  const [todos, setTodos] = useState(list);
     const [newItemFields, setNewItemFields]=useState({
         charityname:'',
         email:'',
@@ -8,6 +11,17 @@ function Donate(){
         name:'',
         telNo:''
       })
+
+      function addTodo(newItemFields) {
+        const newTodo = {
+          id: getNextId(),
+          charityName: newItemFields.charityname,
+          Amount: newItemFields.amount,
+        };
+        
+        const updatedTodos = [...todos, newTodo]
+        setTodos(updatedTodos);
+      }
       function handleFields(e){
         const{name,value}=e.target
         setNewItemFields(newItemFields => {
@@ -19,6 +33,7 @@ function Donate(){
       }
       function handleSubmit(e){
         e.preventDefault()
+        addTodo(newItemFields)
          setNewItemFields({
             charityname:'',
             email:'',
@@ -28,13 +43,20 @@ function Donate(){
         })
       }
     return (
+      <div>
         <form onSubmit={handleSubmit}>
-            <input
+          <label>
+            charity Name
+            <select
             name="charityname"
-            type="text"
             value={newItemFields.charityname}
             placeholder="Charity Name"
-            onChange={handleFields}/>
+            onChange={handleFields}>
+              {lists.map((list,index)=>(
+                <option key={index}>{list.charityName}</option>
+              ))}
+            </select>
+            </label>
              <input
             name='name'
             type="text"
@@ -63,6 +85,17 @@ function Donate(){
           <center><button >Submit</button></center>
 
         </form>
+        <div>
+          <center><h2>Donations</h2></center>
+          <ul>
+          {todos.map((todo)=>{
+           return <li key={todo.id}>
+            <strong>{todo.charityName}</strong>
+            <strong>{todo.Amount}</strong>
+            </li> })}
+          </ul>
+        </div>
+        </div> 
     )
 }
 

@@ -1,17 +1,29 @@
-import React from "react"
+import React,{useState} from "react"
+import { useHistory } from "react-router-dom";
+
 function Authentication(){
+    // const [isLoggedIn, setIsLoggedIn] = useState(false);
+    // let history = useHistory();
+
+
+    // useEffect(()=>{
+    //     return ( if(isAuthenticated){
+    //          setIsLoggedIn(true);
+    //          history.pushState('/')        }
+    //     )
+    // },[isAuthenticated,history])
     
     function submit(e){
 e.preventdefault()
-
     }
+   
     
     return(
         <div>
 
-            <h1>sign up</h1>
+            <h1>Login</h1>
             
-            <form onSubmit = {submit}id="form">
+            <form onSubmit={submit} id="form">
                 <label for="username"></label>
                 <input type="text" placeholder="username" name="username" id="name"/>
                 <label for="email"></label>

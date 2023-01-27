@@ -51,7 +51,7 @@ function App() {
                  handleSearchLoc={handleSearchLoc} />}></Route>
                 <Route path='/about' element={<About />}></Route>
                 <Route path='/contact' element={<Contact />}></Route>
-                <Route path='/donate' element={<Donate/>}></Route>
+                <Route path='/donate' element={<Donate lists={lists}/>}></Route>
                 {/* <Route path='/sign up' element={<SignUp/>}></Route> */}
                 <Route path='/login' element={<Authentication/>}></Route>
               </Routes>
