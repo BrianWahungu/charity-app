@@ -15,7 +15,7 @@ function App() {
   const [lists,setlist]=useState([])
   
   useEffect(()=>{
-    fetch('https://api.npoint.io/01b09628cc4c55f6371d/data/')
+    fetch('https://api.npoint.io/855736454b32c5468cca/data/')
     .then(res =>res.json())
     .then(data =>setlist(data))
   },[])
