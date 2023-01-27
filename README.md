@@ -37,7 +37,8 @@ Open it in Visual Studio Code
 
 
 Run this command
-   `npm install`
+
+         npm install
 
 You should also run 
 
