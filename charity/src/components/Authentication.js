@@ -1,40 +1,66 @@
-import React,{useState} from "react"
-import { useHistory } from "react-router-dom";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-function Authentication(){
-    // const [isLoggedIn, setIsLoggedIn] = useState(false);
-    // let history = useHistory();
+function Authentication() {
+ 
+  const [formData, setFormData] = useState({
+    username: "",
+    email: "",
+    password: ""
+  });
+  
+  let navigate = useNavigate();
 
+  function handleChange(e) {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  }
 
-    // useEffect(()=>{
-    //     return ( if(isAuthenticated){
-    //          setIsLoggedIn(true);
-    //          history.pushState('/')        }
-    //     )
-    // },[isAuthenticated,history])
-    
-    function submit(e){
-e.preventdefault()
+  function handleSubmit(e) {
+    e.preventDefault();
+        
+        navigate("/");
+      
     }
-   
-    
-    return(
-        <div>
 
-            <h1>Login</h1>
-            
-            <form onSubmit={submit} id="form">
-                <label for="username"></label>
-                <input type="text" placeholder="username" name="username" id="name"/>
-                <label for="email"></label>
-                <input type="email" placeholder="Email" name="email" id="email"/>
-                <label for="password"></label>
-                <input type="password" placeholder="password" name="password" id="password"/>
-              
-                <button type="submit">Submit</button>
-
-                 </form>
-        </div>
-    )
+  return (
+    <div>
+      <h1>Login</h1>
+      
+      <form onSubmit={handleSubmit}>
+        <label htmlFor="username">Username</label>
+        <input
+          type="text"
+          placeholder="username"
+          name="username"
+          id="username"
+          onChange={handleChange}
+          value={formData.username}
+        />
+        <label htmlFor="email">Email</label>
+        <input
+          type="email"
+          placeholder="Email"
+          name="email"
+          id="email"
+          onChange={handleChange}
+          value={formData.email}
+        />
+        <label htmlFor="password">Password</label>
+        <input
+          type="password"
+          placeholder="password"
+          name="password"
+          id="password"
+          onChange={handleChange}
+          value={formData.password}
+        />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  );
 }
-export default Authentication 
+
+export default Authentication;

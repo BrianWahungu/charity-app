@@ -1,9 +1,16 @@
-import React,{useState} from "react";
-import { list, getNextId } from './list'
+import React,{useState,useEffect} from "react";
+import { getNextId } from './list'
 
 
 function Donate({lists}){
-  const [todos, setTodos] = useState(list);
+     const [todos, setTodos] = useState(
+      () => JSON.parse(localStorage.getItem("todos")) || []
+     );
+     useEffect(() => {
+      localStorage.setItem("todos", JSON.stringify(todos))
+  }, [todos])
+  
+
     const [newItemFields, setNewItemFields]=useState({
         charityname:'',
         email:'',
@@ -87,13 +94,26 @@ function Donate({lists}){
         </form>
         <div>
           <center><h2>Donations</h2></center>
-          <ul>
-          {todos.map((todo)=>{
-           return <li key={todo.id}>
-            <strong>{todo.charityName}</strong>
-            <strong>{todo.Amount}</strong>
-            </li> })}
-          </ul>
+          <table>
+            <thead>
+              <tr>
+              
+                <th>Charity Name</th>
+                <th>Amount</th>
+                
+              </tr>
+              </thead>
+              <tbody>
+              {todos.map((todo,index)=>{
+           return <tr key={index}>
+            <td>{todo.charityName}</td>
+            <td>{todo.Amount}</td>
+            </tr> })}
+              </tbody>
+          </table>
+          
+          
+          
         </div>
         </div> 
     )
