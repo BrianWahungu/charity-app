@@ -9,10 +9,12 @@ import {BrowserRouter, Route, Routes } from 'react-router-dom';
 import Footer from './components/footer';
 import React, { useState,useEffect } from "react";
 import Donate from './components/Donate';
+import Signup from './components/Signup';
 
 
 function App() {
   const [lists,setlist]=useState([])
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   
   useEffect(()=>{
     fetch('https://api.npoint.io/01b09628cc4c55f6371d/data/')
@@ -41,7 +43,9 @@ function App() {
   return (
    <div>
       <BrowserRouter>
-            <NavBar/>
+            <NavBar
+            isLoggedIn={isLoggedIn}
+            setIsLoggedIn={setIsLoggedIn}/>
               <Routes>
                 <Route path='/' element={<Home />}></Route>
                 <Route path='/organiztion' element={<OrganizationList 
@@ -50,8 +54,10 @@ function App() {
                  handleSearchLoc={handleSearchLoc} />}></Route>
                 <Route path='/about' element={<About />}></Route>
                 <Route path='/contact' element={<Contact />}></Route>
-                <Route path='/donate' element={<Donate/>}></Route>
-                {/* <Route path='/sign up' element={<SignUp/>}></Route> */}
+                <Route path='/donate' element={<Donate lists={lists}/>}></Route>
+                <Route path='/signup' element={<Signup 
+                setIsLoggedIn={setIsLoggedIn}/>}></Route>
+                
                 <Route path='/login' element={<Authentication/>}></Route>
               </Routes>
               <Footer/>
