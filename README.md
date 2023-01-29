@@ -1,71 +1,40 @@
-# Getting Started with Create React App
+## CHARITY-APP
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a group collaboration project. In this work, a single page React application was built. 
 
-## Available Scripts
+## Built with
 
-In the project directory, you can run:
+There are different technologies that were used to build this single page React application. They included:
+1. React - For building the front end. 
+2. Vercel- For deploying the application.
+3. 
 
-### `npm start`
+## Running the application
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Using local host.
+    1. Navigate to the folder that you would like to clone this repository in your local files (use cd)
+    2. Clone this repository by running the git clone command and using the ssh key given in the repository (git clone git@github.com:BrianWahungu/charity-app.git)
+    3. Install the dependencies required for this application to run by keying (npm install) in the command line. 
+    4. Opening the application using live server by keying (npm start) on the terminal.
+    5. The application should load on a one page showing the different sections of the app.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Using the deployed link
+    Use this link to view the application as it loads on a static web page hosted by vercels:
+    https://by-graces.vercel.app/
 
-### `npm test`
+## Features of the application:
+1. Submitting donations.
+2. A list of organizations 
+3. On clicking on an organization name, you get the details about the organization.
+4. A login form that on submit you are redirected to the home page.
+5. A sign up form that when you submit you are directed to the home page.
+6. A search based on location and category.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## License:
+ISC
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# By-Graces
+## Authors:
+1. Grace Aloo
+2. Zamil Mozamil Sheikh
+3. Benson Wangome
+4. Brian Wahungu. 
